@@ -1,3 +1,131 @@
+/* BASE */
 body {
   margin: 0;
+  background: whitesmoke;
+}
+
+/* COMMON */
+.btn {
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  padding: 5px 15px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+.btn:hover {
+  background: whitesmoke;
+  color: #333;
+}
+
+/* NAVBAR */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  padding: 15px 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 750px) {
+  #navbar a {
+    flex: 1;
+    text-align: center;
+    margin: 0 15px;
+  }
+}
+
+/* WELCOME */
+#welcome-section {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/303256/arches-945495_1920.jpg);
+  background-position: center;
+  height: 100vh;
+  display: flex;
+}
+
+#welcome-section h1 {
+  margin: auto;
+  padding-bottom: 30px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 4em;
+}
+
+/* PROJECTS */
+#projects {
+  padding-top: 25px;
+}
+#projects h2 {
+  text-align: center;
+  font-size: 2.5em;
+  padding: 1em 0;
+}
+.projects {
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+}
+.project-tile {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.project-header {
+  text-align: center;
+  padding: 15px 5px;
+  background: #333;
+  color: whitesmoke;
+  font-size: 1.5em;
+}
+
+.project-image {
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+}
+
+.project-links {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.project-links a {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1;
+}
+.project-links a:first-child {
+  margin: 0 5px 0 10px;
+}
+.project-links a:nth-child(2) {
+  margin: 0 10px 0 5px;
+}
+
+.project-links a:hover {
+  background-color: #ccc;
+}
+
+@media (max-width: 1000px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 750px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* LINKS */
+.profile-link-wrap {
+  text-align: center;
+  padding-bottom: 1em;
 }

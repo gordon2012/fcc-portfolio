@@ -6,4 +6,4 @@
 
 <https://gordonscampinggear.com>
 
-![Portfolio](https://gordonscampinggear.com/img/heatmap.png)
+![Portfolio](https://gordonscampinggear.com/img/portfolio.png)
